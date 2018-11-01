@@ -11,10 +11,14 @@ namespace NewsPublisher.Core.Data
         public string Title { get; set; }
         public string SiteSelection { get; set; }
         public string TextField { get; set; }
+        public string ImagesDir { get; set; }
+        public string FilesDir { get; set; }
+
         public string CurentUserName { get; set; }
         public string CurentUserLogin { get; set; }
+
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public DateTime CreatedDate { get; set; }
-        public ICollection<Image> Images { get; set; } //= new List<Image>();
+
     }
 }
